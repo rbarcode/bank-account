@@ -9,7 +9,13 @@ function BankAccount(name, initialDeposit, currentBalance) {
 
 }
   // this prototype passes test #3
-BankAccount.prototype.addDeposit = function(depositAmount) {
-  this.currentBalance = this.currentBalance + parseInt(depositAmount);
+BankAccount.prototype.addDeposit = function(deposit) {
+  this.currentBalance = this.currentBalance + parseInt(deposit);
   return this.currentBalance;
 };
+
+BankAccount.prototype.subtractWithdrawl = function(withdrawl) {
+  this.currentBalance = this.currentBalance - parseInt(withdrawl);
+  return this.currentBalance;
+};
+ 
