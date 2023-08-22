@@ -16,3 +16,10 @@ Code:
 let bankAccount = new BankAccount("Customer", 10, 10)
 bankAccount.addDeposit(5);
 Expected Outcome: currentBalance = 15
+
+Describe: BankAccount.prototype.subtractWithdrawl(withdrawl)
+Test #4 It will subtract a given amount from currentBalance. 
+Code: 
+let bankAccount = new BankAccount("Customer", 10, 10)
+bankAccount.subtractWithdrawl(5);
+Expected Outcome: currentBalance = 5
